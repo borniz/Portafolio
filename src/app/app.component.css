@@ -1,0 +1,11 @@
+
+.navbar navbar-expand-lg bg-body-tertiary{
+    background-color: black;
+}
+.socialNetworks{
+    display: flex;
+    padding-right: 5rem;
+}
+.imgLogo{
+    margin-left: 1rem;
+}
