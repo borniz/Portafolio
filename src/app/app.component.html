@@ -33,6 +33,14 @@
         <li class="nav-item">
           <a
             class="nav-link"
+            [routerLink]="['/project']"
+            routerLinkActive="router-link-active"
+            >Project</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
             [routerLink]="['/contact']"
             routerLinkActive="router-link-active"
             >Contact</a
@@ -65,3 +73,18 @@
 </nav>
 
 <router-outlet />
+
+<footer>
+  <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a
+        class="navbar-brand"
+        href="/CV Yarod.pdf"
+        download="Yarod_Bonilla_CV.pdf"
+        class="download-btn"
+      >
+        Descargar mi HV
+      </a>
+    </div>
+  </nav>
+</footer>

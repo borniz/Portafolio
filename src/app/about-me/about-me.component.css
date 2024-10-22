@@ -1,15 +1,128 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-h1{
-    color: white;
-    justify-self: center;
-    font-family: "Playfair Display", serif;
-    margin-top: 3rem;
+button {
+    cursor: pointer;
+    border-color: white;
 }
-:host{
-    display: block;
+/* Encabezado */
+h1 {
+  color: white;
+  justify-self: center;
+  font-family: 'Playfair Display', serif;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+/* Cuerpo del texto */
+h4 {
+  margin: 2rem;
+  text-align: justify;
+}
+h5{
+    margin: 1rem
+}
+:host {
+  display: block;
   background-image: url("/backgroundAbout.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 100vh; }
+  color: white;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 
+    -1px -1px 0 black, 
+     1px -1px 0 black, 
+    -1px  1px 0 black, 
+     1px  1px 0 black;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Contenedor general */
+.containerAbout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+/* Estilo de las columnas */
+.containerh4AboutR,
+.containerh4Aboutc,
+.containerh4AboutL {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  border-radius: 8px;
+}
+
+/* Links */
+a {
+  text-decoration: underline;
+  color: white;
+}
+
+/* Títulos de secciones */
+h2 {
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Información adicional */
+.InfoContainerAboutC,
+.InfoContainerAboutR,
+.InfoContainerAboutL {
+  display: none;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 2rem 0;
+}
+
+/* Botón de regreso */
+.btnBackAbout {
+  background-color: transparent;
+  background-image: url('/LogoBack.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 6rem;
+  width: 3rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media Query para pantallas pequeñas (móvil) */
+@media (max-width: 768px) {
+  .containerh4AboutR,
+  .containerh4Aboutc,
+  .containerh4AboutL {
+    width: 100%; /* Ocupan toda la pantalla */
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Media Query para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .containerh4AboutR,
+  .containerh4Aboutc,
+  .containerh4AboutL {
+    width: 45%; /* Se muestran en dos columnas */
+  }
+}
