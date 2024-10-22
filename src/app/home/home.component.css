@@ -1,37 +1,57 @@
+h1 {
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-weight: bold;
+  text-shadow: 
+      -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px 1px 0 black,
+      1px 1px 0 black;
+  justify-self: center;
+  padding-top: 4rem;
+  text-align: center; /* Centrar el texto */
+  font-size: 2.5rem; /* Tamaño de fuente adaptable */
+}
 
-h1{
-    font-family: "Playfair Display", serif;
-    color: white;
-    font-weight: bold;
+h5 {
+  font-weight: bold;
   text-shadow: 
-    -1px -1px 0 black,  /* Sombra arriba a la izquierda */
-    1px -1px 0 black,   /* Sombra arriba a la derecha */
-    -1px 1px 0 black,   /* Sombra abajo a la izquierda */
-    1px 1px 0 black;    /* Sombra abajo a la derecha */
-    justify-self: center;
-    padding-top: 4rem;
+      -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px 1px 0 black,
+      1px 1px 0 black;
+  font-family: "Playfair Display", serif;
+  color: white;
+  justify-self: center;
+  text-align: center; /* Centrar el texto */
+  font-size: 1.5rem; /* Tamaño de fuente adaptable */
 }
-h5{
-    font-weight: bold;
+
+h4 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
   text-shadow: 
-    -1px -1px 0 black,  /* Sombra arriba a la izquierda */
-    1px -1px 0 black,   /* Sombra arriba a la derecha */
-    -1px 1px 0 black,   /* Sombra abajo a la izquierda */
-    1px 1px 0 black;    /* Sombra abajo a la derecha */
-    font-family: "Playfair Display", serif;
-    color: white;
-    justify-self: center;
+      -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px 1px 0 black,
+      1px 1px 0 black;
+  color: white;
+  justify-self: center;
+  text-align: center; /* Centrar el texto */
+  margin: 0rem 2rem; /* Ajustar los márgenes para ser más responsivos */
+  font-size: 1.2rem; /* Tamaño de fuente adaptable */
 }
-h4{
-    font-family: "Playfair Display", serif;
-    font-weight: bold;
-  text-shadow: 
-    -1px -1px 0 black,  /* Sombra arriba a la izquierda */
-    1px -1px 0 black,   /* Sombra arriba a la derecha */
-    -1px 1px 0 black,   /* Sombra abajo a la izquierda */
-    1px 1px 0 black;    /* Sombra abajo a la derecha */
-    color: white;
-    justify-self: center;
-    text-align: center;
-    margin: 0rem 24rem;
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2rem; /* Tamaño más pequeño en pantallas pequeñas */
+  }
+  h5 {
+      font-size: 1.2rem; /* Tamaño más pequeño en pantallas pequeñas */
+  }
+  h4 {
+      font-size: 1rem; /* Tamaño más pequeño en pantallas pequeñas */
+      margin: 0rem 1rem; /* Márgenes más pequeños en pantallas pequeñas */
+  }
 }
