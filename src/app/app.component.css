@@ -6,6 +6,10 @@
     display: flex;
     padding-right: 5rem;
 }
+.navbar-toggler-icon{
+    background-image: url('/toggler-icon.png');
+    border-color: white;
+  }
 .imgLogo{
     margin-left: 1rem;
 }

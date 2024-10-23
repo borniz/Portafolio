@@ -18,6 +18,7 @@
   white-space: nowrap;
 }
 
+
 /* Márgenes progresivos para dar forma de pirámide */
 .pyramid-text h4:nth-child(1)  { margin-left: 0rem; }
 .pyramid-text h4:nth-child(2)  { margin-left: 0.5rem; }
