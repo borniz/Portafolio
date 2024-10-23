@@ -1,8 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
-body{
+body {
     height: 100%;
     background-image: url("/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 700px) {
+    body {
+        background-image: url("/background-small.png"); /* Replace with your smaller background image */
+        background-size: cover; /* Adjust the background size as needed */
+    }
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 769px) {
+    body {
+        background-image: url("/background.png"); /* Keep the original background image */
+        background-size: cover; /* Keep the original background size */
+    }
 }
