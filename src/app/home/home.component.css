@@ -1,57 +1,46 @@
-h1 {
+:host{
   font-family: "Playfair Display", serif;
-  color: white;
   font-weight: bold;
+  color: white;
+  text-align: center;
   text-shadow: 
       -1px -1px 0 black,
       1px -1px 0 black,
       -1px 1px 0 black,
       1px 1px 0 black;
-  justify-self: center;
-  padding-top: 4rem;
-  text-align: center; /* Centrar el texto */
-  font-size: 2.5rem; /* Tamaño de fuente adaptable */
+  font-size: 1.8rem; /* Modificado de 2rem a 1.8rem */
+}
+.pyramid-text h4 {
+  margin: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-h5 {
-  font-weight: bold;
-  text-shadow: 
-      -1px -1px 0 black,
-      1px -1px 0 black,
-      -1px 1px 0 black,
-      1px 1px 0 black;
-  font-family: "Playfair Display", serif;
-  color: white;
-  justify-self: center;
-  text-align: center; /* Centrar el texto */
-  font-size: 1.5rem; /* Tamaño de fuente adaptable */
-}
-
-h4 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  text-shadow: 
-      -1px -1px 0 black,
-      1px -1px 0 black,
-      -1px 1px 0 black,
-      1px 1px 0 black;
-  color: white;
-  justify-self: center;
-  text-align: center; /* Centrar el texto */
-  margin: 0rem 2rem; /* Ajustar los márgenes para ser más responsivos */
-  font-size: 1.2rem; /* Tamaño de fuente adaptable */
-}
+/* Márgenes progresivos para dar forma de pirámide */
+.pyramid-text h4:nth-child(1)  { margin-left: 0rem; }
+.pyramid-text h4:nth-child(2)  { margin-left: 0.5rem; }
+.pyramid-text h4:nth-child(3)  { margin-left: 1.5rem; }
+.pyramid-text h4:nth-child(4)  { margin-left: 2rem; }
+.pyramid-text h4:nth-child(5)  { margin-left: 2.5rem; }
+.pyramid-text h4:nth-child(6)  { margin-left: 3rem; }
+.pyramid-text h4:nth-child(7)  { margin-left: 3.3rem; }
+.pyramid-text h4:nth-child(8)  { margin-left: 3.4rem; }
+.pyramid-text h4:nth-child(9)  { margin-left: 4.2rem; }
+.pyramid-text h4:nth-child(10) { margin-left: 4.4rem; }
+.pyramid-text h4:nth-child(11) { margin-left: 4.3rem; }
+.pyramid-text h4:nth-child(12) { margin-left: 4.6rem; }
+.pyramid-text h4:nth-child(13) { margin-left: 4.8rem; }
+.pyramid-text h4:nth-child(14) { margin-left: 5.1rem; }
+.pyramid-text h4:nth-child(15) { margin-left: 5.4rem; }
+.pyramid-text h4:nth-child(16) { margin-left: 5.8rem; }
+.pyramid-text h4:nth-child(17) { margin-left: 6rem; }
 
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
-  h1 {
-      font-size: 2rem; /* Tamaño más pequeño en pantallas pequeñas */
-  }
-  h5 {
-      font-size: 1.2rem; /* Tamaño más pequeño en pantallas pequeñas */
-  }
-  h4 {
-      font-size: 1rem; /* Tamaño más pequeño en pantallas pequeñas */
-      margin: 0rem 1rem; /* Márgenes más pequeños en pantallas pequeñas */
+  .pyramid-text h4 {
+    font-size: 1rem;
+    margin-left: 0rem; /* Sin márgenes en pantallas pequeñas */
   }
 }
